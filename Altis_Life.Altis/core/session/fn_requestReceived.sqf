@@ -31,6 +31,12 @@ if (!isServer && (!isNil "life_adminlevel" || !isNil "life_coplevel" || !isNil "
     failMission "SpyGlass";
 };
 
+if(profileName != _this select 1) exitWith {
+    hint format["Your old nickname %1",_this select 1];
+    [format["For your key is fixed another nickname, enter your old nickname in the profile of the game!<br/><br/>Your old nickname <t color='#b20303'>%1</t><br/><br/>If you have any problems with the change nickname - refer to the forum <t color='#665bff'>vk.com/russlandlife</t>",_this select 1],"Registered nickname change","adopt"] call BIS_fnc_guiMessage;
+    ["NameExists",false,false] call BIS_fnc_endMission;
+};
+
 //Parse basic player information.
 CASH = parseNumber (_this select 2);
 BANK = parseNumber (_this select 3);
