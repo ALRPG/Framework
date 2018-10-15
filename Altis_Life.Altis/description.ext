@@ -171,3 +171,12 @@ class CfgNotifications {
         priority = 5;
     };
 };
+
+class NameExists {
+    title = "Change the nickname";
+    subTitle = "";
+    description = "For your key is fixed another nickname, enter your old nickname in the profile of the game!";
+    pictureBackground = "";
+    picture = "";
+    pictureColor[] = {0,0.3,0.6,1};
+};
