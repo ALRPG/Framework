@@ -7887,6 +7887,10 @@
             <Portuguese>Você precisa de R$%1 para processar sem licença!</Portuguese>
             <Polish>Musisz mieć $%1 aby przetworzyć bez odpowiedniej licencji</Polish>
         </Key>
+        <Key ID="STR_Process_LicenseDisabled">
+            <Original>You need a license to process here.</Original>
+            <French>Vous avez besoin de licence pour traiter ici.</French>
+        </Key>
         <Key ID="STR_Process_Processed">
             <Original>You have processed %1 into %2</Original>
             <Czech>Máte zpracovaný %1 do %2</Czech>
