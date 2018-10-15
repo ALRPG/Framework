@@ -23,6 +23,7 @@ if (isClass (missionConfigFile >> "ProcessAction" >> _type)) then {
     _text = M_CONFIG(getText,"ProcessAction",_type,"Text");
 } else {_filter = true;};
 
+if (_noLicenseCost isEqualTo -1) exitWith {life_action_inUse = false; hint localize "STR_Process_LicenseDisabled";};
 if (_filter) exitWith {life_action_inUse = false;};
 
 _itemInfo = [_materialsRequired,_materialsGiven,_noLicenseCost,(localize format ["%1",_text])];
